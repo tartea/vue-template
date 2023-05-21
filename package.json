@@ -1,5 +1,5 @@
 {
-  "name": "wx-chat-frontend",
+  "name": "vue-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
@@ -32,7 +33,14 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "no-unused-vars": "off",
+      "vue/no-unused-components": [
+      2
+      ],
+      "no-multiple-empty-lines": 2
+    }
   },
   "browserslist": [
     "> 1%",
